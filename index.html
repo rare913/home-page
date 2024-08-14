@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INS Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./56.webp">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+        }
+
+        .head h1 {
+            display: inline;
+            margin-left: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        .head {
+            background-color: rgba(243, 253, 255, 0.103);
+            height: 60px;
+            justify-content: center;
+            padding-top: 40px;
+            margin-top: 40px;
+        }
+
+        .m1 {
+            margin-left: 400px;
+            width: 40%;
+            height: 200px;
+            margin-top: 100px;
+            margin-bottom: 150px;
+
+        }
+
+        .m1 h1 {
+            font-size: 50px;
+            color: #34395e;
+            padding-bottom: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .m1 p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Sans;
+            letter-spacing: 1px;
+            color: #34395e;
+        }
+
+        .main {
+            width: 70%;
+            height: 600px;
+            background-color: rgb(255, 253, 253);
+            margin-left: 300px;
+            margin-top: 5%;
+            box-shadow: 1px 1px 1pc rgba(128, 128, 128, 0.308);
+            border-radius: 25px;
+            margin-bottom: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .text {
+            padding-top: 160px;
+            padding-left: 60px;
+            float: left;
+        }
+
+        .text p {
+            padding-bottom: 50px;
+            padding-right: 50px;
+        }
+
+        .text h1 {
+            text-transform: uppercase;
+        }
+
+        .text h3 {
+            color: rgb(0, 195, 255);
+        }
+
+        .text button {
+            background-color: #0497aa;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+
+        .img1 img {
+            height: 400px;
+            padding-top: 130px;
+            float: left;
+            padding-right: 10px;
+        }
+
+        .img2 img {
+            height: 400px;
+            padding-top: 100px;
+            float: left;
+            padding-right: 10px;
+        }
+
+        .img3 img {
+            height: 400px;
+            padding-top: 70px;
+            float: left;
+        }
+
+        .text span {
+            background: linear-gradient(to right, #0D47A1, #1565C0, #1976D2, #1E88E5, #2196F3, #42A5F5, #64B5F6);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .why {
+            width: 100%;
+            height: 500px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .wh1 {
+            box-shadow: 1px 1px 1.5pc rgba(128, 128, 128, 0.308);
+            height: 300px;
+            width: 500px;
+            padding-left: 50px;
+            padding-top: 50px;
+            float: left;
+            margin-left: 80px;
+            border-radius: 25px;
+            color: #34395e;
+        }
+
+        .wh2 {
+            box-shadow: 1px 1px 1.5pc rgba(128, 128, 128, 0.308);
+            height: 300px;
+            width: 500px;
+            padding-left: 50px;
+            padding-top: 50px;
+            float: left;
+            margin-left: 50px;
+            margin-top: 50px;
+            border-radius: 25px;
+            background-color: rgb(1, 182, 182);
+            color: white;
+        }
+
+        .wh3 {
+            box-shadow: 1px 1px 1.5pc rgba(128, 128, 128, 0.308);
+            height: 300px;
+            width: 500px;
+            padding-left: 50px;
+            padding-top: 50px;
+            float: left;
+            margin-left: 50px;
+            border-radius: 25px;
+            color: #34395e;
+        }
+
+        .abc {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 250px;
+        }
+
+        .aa {
+            height: 600px;
+            margin-left: 400px;
+            margin-top: 200px;
+            float: left;
+        }
+
+        .bb {
+            height: 600px;
+            float: left;
+            margin-top: 200px;
+            padding-left: 60px;
+        }
+
+        .bb img {
+            height: 400px;
+            width: 700px;
+            border-radius: 25px;
+        }
+
+        .cdf {
+            width: 100%;
+            height: 300px;
+            background-color: rgba(206, 206, 206, 0.493);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1a1a1b;
+        }
+
+        .cc {
+            float: left;
+            padding-left: 200px;
+            padding-top: 100px;
+
+        }
+
+        .dd {
+            float: left;
+            padding-left: 200px;
+            padding-top: 100px;
+        }
+
+        .ee {
+            float: left;
+            padding-left: 200px;
+            padding-top: 100px;
+        }
+
+        .ff {
+            float: left;
+            padding-left: 200px;
+            padding-top: 100px;
+        }
+        .footer {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(25, 24, 27);
+            float: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: whitesmoke;
+        }
+        .f1 {
+            float: left;
+            padding-left: 200px;
+            padding-top: 50px;
+        }
+        .f2 {
+            float: left;
+            padding-left: 200px;
+            padding-top: 50px;
+        }
+        .f3 {
+            float: left;
+            padding-left: 200px;
+            padding-top: 50px;
+        }
+
+        .f4 {
+            float: left;
+            padding-left: 200px;
+            padding-top: 50px;
+        }
+
+        .f5 {
+            float: left;
+            padding-left: 200px;
+            padding-top: 50px;
+        }
+
+        .footer h2 {
+            padding-bottom: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1 style="padding-right: 750px; padding-left: 100px;">INS SHAHRIAR</h1>
+        <h1>HOME</h1>
+        <h1>SERVICES</h1>
+        <h1>ABOUT US</h1>
+        <h1>CONTACT US</h1>
+    </div>
+    <div class="m1">
+        <h1>INS SHAHRIAR</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis <br> corporis harum, laboriosam iusto, est
+            cum
+            repellat odio aperiam <br> unde aut quia, optio eveniet. Iusto sed, laudantium <br> assumenda veritatis odit
+            iure!</p>
+    </div>
+    <div class="main">
+        <div class="text">
+            <h3>___ Lorem ipsum dolor sit amet</h>
+                <h1>Lorem ipsum dolor sit <br> amet <span>consectetur</span> </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum alias <br> minus. Praesentium
+                    ad,
+                    corporis rem temporibus sed, eius placeat et <br> reprehenderit doloremque totam tempore modi
+                    nesciunt
+                    perspiciatis <br> cumque recusandae.</p>
+                <button>Get Srarted</button>
+
+        </div>
+        <div class="imgg">
+            <div class="img1">
+                <img src="./smiling-student-studying-library_23-2147844659.jpg" alt="">
+            </div>
+            <div class="img2">
+                <img src="./medium-shot-young-man-school.jpg" alt="">
+            </div>
+            <div class="img3">
+                <img src="./young-man-writing-notebook-study-session.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="us">
+        <h1
+            style="text-align: center; margin-top: 250px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 50px; color: rgb(46, 46, 61); margin-bottom: 70px;">
+            Why Choose Us?</h1>
+        <div class="why">
+            <div class="wh1">
+                <i style="font-size: 80px;" class="fa-solid fa-mug-hot"></i>
+                <h2 style="padding-bottom: 30px; padding-top: 20px;">COFFEE & TEA</h2>
+                <p>Adipisicing elit. Consequatur soluta dolore debitis voluptatum <br> error minima facilis ad
+                    reiciendis
+                    vel.</p>
+
+            </div>
+            <div class="wh2">
+                <i style="font-size: 80px;" class="fa-solid fa-circle-up"></i>
+                <h2 style="padding-bottom: 30px; padding-top: 20px;">EASILY UPGREADE</h2>
+                <p>Adipisicing elit. Consequatur soluta dolore debitis voluptatum <br> error minima facilis ad
+                    reiciendis
+                    vel.</p>
+
+            </div>
+            <div class="wh3">
+                <i style="font-size: 80px;" class="fa-solid fa-truck"></i>
+                <h2 style="padding-bottom: 30px; padding-top: 20px;">FREE DELIVERY</h2>
+                <p>Adipisicing elit. Consequatur soluta dolore debitis voluptatum <br> error minima facilis ad
+                    reiciendis
+                    vel.</p>
+
+            </div>
+        </div>
+        <div class="cdf">
+            <div class="cc">
+                <h1>INS Specific</h1>
+                <p>The latest design trends meet <br> hand-crafted templates for <br> INS.</p>
+
+            </div>
+            <div class="dd">
+                <h1>Website Builder
+                </h1>
+                <p>Our website builder will provide <br> the ultimate flexibility and <br> functionality.
+
+                </p>
+
+            </div>
+            <div class="ee">
+                <h1>Caring Support
+                </h1>
+                <p>We have your back with our <br> best in class support team.
+
+                </p>
+
+            </div>
+            <div class="ff">
+                <h1>Experience
+                </h1>
+                <p>10+ years of experience helping the <br> world build websites with impact.
+
+                </p>
+
+            </div>
+        </div>
+        <div class="adc">
+            <div class="aa">
+                <h1
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 50px; padding-bottom: 30px; color: rgb(46, 46, 61);">
+                    Starting an Effective <br>
+                    Internet Ministry</h1>
+                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(46, 46, 61);">
+                    There
+                    are a
+                    few ways to create Social Media connectivity, <br> but the best way is to be sure your website
+                    <br>
+                    built on a Blog structure such as WordPress. <br> The Blog structure will allow you to publish
+                    messages
+                    <br> frequently through the blog and simultaneously <br> publish links to those messages onto
+                    social
+                    <br> media platforms through plugin technology. <br> Be sure that the website provider you’re
+                    working
+                    <br> with knows this is a requirement.
+                </p>
+
+
+            </div>
+            <div class="bb">
+                <img src="./1111.jpg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="f1">
+            <h2>OUR POLICY</h2>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+
+        </div>
+        <div class="f2">
+            <h2>ABOUT US</h2>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+
+        </div>
+        <div class="f3">
+            <h2>CUSTOMER CARE</h2>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+
+        </div>
+        <div class="f4">
+            <h2>OUR POLICY</h2>
+            <h6>lorem 1</h6>
+            <h6>lorem 2</h6>
+            <h6>lorem 3</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+
+        </div>
+        <div class="f5">
+            <h2>HAPPY JOURNEY</h2>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>Lorem, ipsum dolor</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <h6>lorem 1</h6>
+            <h6>lorem 2</h6>
+            <h6>Lorem ipsum dolor sit</h6>
+            <h6>Lorem ipsum dolor sit amet</h6>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
